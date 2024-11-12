@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>formulário</title>
+    <link rel="stylesheet" href="">
+    <script>
+    function valida(f) {
+        if (f.nome.value === "") {
+            alert ("o campo nome não pode ficar vazio");
+            return false;
+        }
+    }
+    </script>
+   </head>
+<body>
+    <form action="form-css.html" method="get" onsubmit="return valida(this);">
+    <table border="0"cellpadding="4">
+        <tr>
+            <td colspan="2" align="center">
+            <b>preencha o formulário e clique no botão enviar</b>
+            </td>
+        </tr>
+        <tr>
+            <td>nome:</td>
+            <td><input type="text" size="45" name="nome"></td>
+        </tr>
+
+        <tr>
+            <td>sexo:</td>
+            <td>
+            <input type="radio" name="sexo" value="M">masculino
+            <input type="radio" 
+            name="sexo" value="F">feminino
+            <input type="radio" 
+             name="sexo" value="prefiro não informar">prefiro não informar
+             </td>
+        </tr>
+
+        <tr>
+            <td>cidade:</td>
+            <td><input type="text" size="20" name="cidade"></td>
+        </tr>
+
+        <tr>
+        <td>estado:</td>
+        <td>
+            <select name="estado">
+                <option value="0">selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceara</option>
+                <option value="GO">Goias</option>
+                <option value="MA">MaranhÃ£o</option>
+                <option value="MS">Mato grosso</option>
+                <option value="MG">Mato G. do Sul</option>
+                <option value="PA">ParÃ¡</option>
+                <option value="PA">Paraiba</option>
+                <option value="PR">paranÃ¡</option>
+                <option value="PA">pernambuco</option>
+                <option value="PA">Piaui</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">=Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="ST">Santa Catarina</option>
+                <option value="SP">SÃ£o Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                </select>
+            </td>
+            </tr>
+
+            <tr align="center">
+                <td colspan="2">
+                    <input type="checkbox" name="geladeira" value="GEL">geladeira
+                    <input type="checkbox" name="VIDEOGAME" value="VG">videogame
+                    <input type="checkbox" name="CELULAR" value="cel">celular
+                    <input type="checkbox" name="televisão" value="tv">televisão
+                   </td>
+                   </tr>
+
+                   <tr>]
+                    <td>mensagem:</td>
+                    <td><textarea name="mensagem" rows="4" cols="35"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td align="center" colspan="2">
+                        <input type="submit" value="enviar">
+                    </td>
+                    </tr>
+                </table>
+                </form>   
+</body>
+</html>
